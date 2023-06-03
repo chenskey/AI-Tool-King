@@ -591,7 +591,7 @@ body {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
 }
 
 .tool-nav .filter {
@@ -599,6 +599,7 @@ body {
     border: 1px solid #F2F2F2;
     border-radius: 16px;
     align-items: center;
+    position: relative;
 }
 
 .tool-nav .filter a {
@@ -614,7 +615,7 @@ body {
     width: 10px;
     height: 10px;
     top: 18px;
-    margin-left: 14.69px;
+    left: 80px;
     flex-grow: 0;
     position: absolute;
 }
@@ -677,6 +678,88 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.tool-list-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+
+.fs-normal {
+    font-size: 16px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-8 a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #F2F2F2;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+}
+
+.dropdown-btn:hover {
+    border-color: #000000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    margin-top: 4px;
+    box-shadow: 1px 1px 3px #ccc;
+    padding: 30px 0;
+    border-radius: 16px;
+    list-style-type: none;
+    left: 30px;
+    background: #ffffff;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 4px 40px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #ccc;
+}
+
+.dropdown-menu.show {
+    display: block;
 }
 
 .tool-cards {
